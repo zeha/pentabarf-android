@@ -1,75 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@drawable/froscon_bg"  >
-<ScrollView
-	android:layout_width="fill_parent"
-	android:layout_height="fill_parent"
-	>
-<RelativeLayout
-		android:layout_width="fill_parent"
-		android:layout_height="fill_parent"
-		android:layout_gravity="fill" android:gravity="bottom|fill">
-		
-	<LinearLayout 
-		android:id="@+id/day_select"
-		
-		android:layout_width="fill_parent" 
-		android:layout_height="fill_parent" />
+    android:layout_height="fill_parent" >
 
-		<Button android:id="@+id/current_event" 
-		android:layout_width="fill_parent" 
-		android:layout_below="@id/day_select"
-		android:textSize="20dip"
-		android:text="@string/current_event"
-		android:enabled="false"
-		android:layout_weight="1"
-		android:layout_height="fill_parent"
-		/>
-		
-		
-		<Button android:id="@+id/btn_favorites"
-		android:text="@string/favorites"
-	 	android:layout_weight="1"
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:layout_below="@id/current_event"
-		android:textSize="20dip" />
-	
-	<Button 
-		android:id="@+id/btn_search"
-		android:text="To search press the Android search key"
-		
-		android:enabled="false"
-		android:layout_width="fill_parent" 
-		android:layout_height="wrap_content"
-		android:layout_below="@id/btn_favorites"
-		android:layout_weight="1"
-		android:textSize="14dip"
-		/>
-		
-
-
-
-</RelativeLayout>
-</ScrollView>
-	
-	    
-    <TextView  
+    <TextView
 	    android:text="Database version"
 	    android:id="@+id/db_ver"
-	    
-	    android:layout_width="fill_parent" 
-	    android:layout_height="wrap_content" 
-	    
-	    android:layout_above="@+id/progress" android:gravity="bottom"/>
-	    
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_above="@+id/progress"/>
+
+
 	    <TextView android:id="@+id/progress"
-	    android:layout_width="fill_parent" 
+	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
 	    android:layout_alignParentBottom="true"
 	    />
 
+	    <ScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentLeft="true" >
+
+	        <RelativeLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="fill"
+	            android:gravity="bottom|fill" >
+
+	            <ImageView
+	                android:id="@+id/event_logo"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_centerHorizontal="true"
+	                android:contentDescription="Logo"
+	                android:src="@drawable/glt_bg" />
+
+	            <LinearLayout
+	                android:id="@+id/day_select"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_below="@id/event_logo" />
+
+	            <Button
+	                android:id="@+id/current_event"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_below="@id/day_select"
+	                android:state_enabled="false"
+	                android:text="@string/current_event"
+	                android:textSize="20dip" />
+
+	            <Button
+	                android:id="@+id/btn_favorites"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_below="@id/current_event"
+	                android:text="@string/favorites"
+	                android:textSize="20dip" />
+
+	           <DigitalClock
+	               android:id="@+id/digitalClock1"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:layout_below="@id/btn_favorites"
+	               android:layout_marginBottom="20dip"
+	               android:layout_marginTop="20dip"
+	               android:gravity="center"
+	               android:text="DigitalClock"
+	               android:textSize="20dip" />
+
+	           <Button
+	                android:id="@+id/btn_event_specials"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_below="@id/digitalClock1"
+	                android:autoLink="all"
+	                android:text="@string/event_specials"
+	                android:textSize="14dip" />
+
+	            <Button
+	                android:id="@+id/btn_search"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_below="@id/btn_event_specials"
+	                android:state_enabled="false"
+	                android:text="@string/search_and_update_hints"
+	                android:textSize="14dip" />
+
+	        </RelativeLayout>
+	    </ScrollView>
 </RelativeLayout>

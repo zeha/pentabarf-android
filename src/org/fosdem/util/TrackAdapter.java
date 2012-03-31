@@ -5,7 +5,7 @@ package org.fosdem.util;
 
 import java.util.ArrayList;
 
-import net.spamt.froscon10.R;
+import at.linuxtage.glt12.R;
 
 import org.fosdem.pojo.Track;
 

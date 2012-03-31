@@ -19,7 +19,7 @@ import android.util.Log;
 
 public class SearchProvider extends ContentProvider {
 	// TODO eMich - add person to search suggestions
-	public static String AUTHORITY = "frosconsearch";
+	public static String AUTHORITY = "gltsearch";
 
 	private static final int SEARCH_SUGGEST = 0;
 	private static final int SHORTCUT_REFRESH = 1;

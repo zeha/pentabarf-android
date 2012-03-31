@@ -21,5 +21,7 @@
 	<drawable name="gray_text_color">#ffaaaaaa</drawable>
 	<drawable name="dark_gray">#333</drawable>
 	<drawable name="dark_green">#007</drawable>
-	<drawable name="fosdem_blue">#ff0b4763</drawable>
+	<drawable name="glt_dark_orange">#d58125</drawable>
+	<drawable name="glt_light_orange">#FFE175</drawable>
+	<drawable name="glt_green">#006c34</drawable>
 </resources>

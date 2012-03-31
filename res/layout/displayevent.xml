@@ -4,17 +4,17 @@
 	android:id="@+id/eventscrollview"  
 	android:layout_width="fill_parent" 
 	android:layout_height="fill_parent"
-	android:background="#ecfaff">
+	android:background="@drawable/glt_light_orange">
 	<LinearLayout
 		android:layout_width="fill_parent"
-		android:layout_height="fill_parent"
+		android:layout_height="wrap_content"
 		android:orientation="vertical">
 	<RelativeLayout 
 		android:id="@+id/RelativeRootLayout" 
 		android:layout_width="fill_parent" 
 		android:layout_height="wrap_content" 
 		android:orientation="vertical" 
-		android:background="@drawable/eventtopbg"
+		android:background="@drawable/glt_dark_orange"
 		>
 		<org.fosdem.views.FavoriteButton
 			android:id="@+id/favoriteButton"
@@ -25,7 +25,7 @@
 			android:layout_width="fill_parent" 
 			android:layout_height="wrap_content" 
 			android:id="@+id/event_title" 
-			android:textColor="#FFF" 
+			android:textColor="#FFF"
 			android:textSize="22dip"  
 			android:text="Title"
 			android:paddingRight="25dip"
@@ -38,14 +38,14 @@
 		android:layout_width="fill_parent" 
 		android:layout_height="wrap_content" 
 		android:orientation="vertical" 
-		android:background="@drawable/eventmetabg"
+		android:background="@drawable/glt_green"
 		>
 		<TextView 
 			android:text="event_track" 
 			android:id="@+id/event_track" 
 			android:layout_width="wrap_content" 
 			android:layout_height="wrap_content" 
-			android:textColor="#BBB" 
+			android:textColor="#FFF"
 			android:layout_marginRight="2dip" 
 			android:layout_alignParentRight="true"
        		android:layout_below="@id/event_title"
@@ -57,7 +57,7 @@
 			android:id="@+id/event_room" 
 			android:layout_width="wrap_content" 
 			android:layout_height="wrap_content" 
-			android:textColor="#BBB" 
+			android:textColor="#FFF"
 			android:layout_marginRight="2dip" 
 			android:layout_marginBottom="5dip"
 			android:layout_alignParentRight="true"
@@ -65,14 +65,13 @@
        		android:paddingRight="5dip"
        		android:paddingBottom="3dip"
 			/>
-				
 			
 		<TextView 
 			android:text="event_speaker" 
 			android:id="@+id/event_speaker" 
 			android:layout_width="wrap_content" 
 			android:layout_height="wrap_content" 
-			android:textColor="#BBB" 
+			android:textColor="#FFF"
 			android:layout_marginRight="2dip"
 			android:paddingLeft="3dip"
 			android:paddingTop="3dip"
@@ -83,7 +82,7 @@
 			android:id="@+id/event_time" 
 			android:layout_width="wrap_content" 
 			android:layout_height="wrap_content" 
-			android:textColor="#BBB" 
+			android:textColor="#FFF"
 			android:layout_marginRight="2dip"
 			android:paddingLeft="3dip"
 			android:paddingBottom="3dip"
@@ -94,7 +93,7 @@
 			android:layout_width="fill_parent" 
 			android:layout_height="wrap_content" 
 			android:orientation="vertical" 
-			android:background="#ecfaff"
+			android:background="@drawable/glt_light_orange"
 			>
 		<TextView 
 			android:text="event_abstract" 
@@ -104,7 +103,7 @@
 			android:textColor="#333" 
 			android:padding="4dip"
 			android:layout_margin="10dip"
-			android:background="#d9f7ff"
+			android:background="@drawable/glt_dark_orange"
 			/>
 			
 		<TextView 

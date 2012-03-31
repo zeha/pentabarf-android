@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-import net.spamt.froscon10.R;
+import at.linuxtage.glt12.R;
 
 import org.fosdem.broadcast.FavoritesBroadcast;
 import org.fosdem.db.DBAdapter;
@@ -24,6 +24,7 @@ import android.content.DialogInterface.OnMultiChoiceClickListener;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -58,7 +59,7 @@ public class Main extends Activity implements ParserEventListener,
 	private static final int UPDATE_ID = Menu.FIRST + 1;
 	private static final int SETTINGS_ID = Menu.FIRST + 2;
 
-	public static final String XML_URL = "http://programm.froscon.org/2011/schedule.xml";
+	public static final String XML_URL = "http://glt12-programm.linuxtage.at/schedule.en.xml";
 
 	public int counter = 0;
 	protected TextView tvProgress = null, tvDbVer = null;

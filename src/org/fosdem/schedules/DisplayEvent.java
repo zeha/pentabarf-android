@@ -5,7 +5,7 @@ import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-import net.spamt.froscon10.R;
+import at.linuxtage.glt12.R;
 
 import org.fosdem.broadcast.FavoritesBroadcast;
 import org.fosdem.db.DBAdapter;
@@ -237,13 +237,13 @@ public class DisplayEvent extends Activity implements OnGestureListener {
 		String extra = "I'm attending '" + event.getTitle() + "' (Day "
 				+ (event.getDayindex()) + " at " + event.getStart().getHours()
 				+ ":" + event.getStart().getMinutes() + " @ " + event.getRoom()
-				+ ") #froscon";
+				+ ") #glt12";
 		long currentTime = Calendar.getInstance().getTimeInMillis();
 		if (currentTime >= event.getStart().getTime()
 				&& currentTime <= (event.getStart().getTime() + ((event
 						.getDuration() + 10) * 60 * 1000)))
 			extra = "I'm currently attending '" + event.getTitle() + "' ("
-					+ event.getRoom() + ") #fosdem";
+					+ event.getRoom() + ") #glt12";
 		intent.putExtra(Intent.EXTRA_TEXT, extra);
 		startActivity(Intent.createChooser(intent, getString(R.string.share)));
 	}

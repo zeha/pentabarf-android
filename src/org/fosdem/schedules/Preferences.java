@@ -1,6 +1,6 @@
 package org.fosdem.schedules;
 
-import net.spamt.froscon10.R;
+import at.linuxtage.glt12.R;
 
 import org.fosdem.broadcast.FavoritesBroadcast;
 
