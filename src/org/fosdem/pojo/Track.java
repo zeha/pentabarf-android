@@ -52,23 +52,13 @@ public class Track {
 		this.events.addAll(events);
 	}
 	
-
 	public String getType() {
-		// FOSDEM specific parts
-		String[] mainTracks = {	"Keynotes", "Security", "Scalability",
-												"Monitoring", "Various", "Database", "Javascript" };
-		String[] sameAsTrack =  {"Lightning Talks", "Certification"};
-		//private final String[] devrooms; = else 
-		
-		// Main Tracks
-		for (String s: mainTracks) {
-			if (0==name.compareTo(s)) return "Main Track";
-	    }
-		// 
+		// GLT12 specific stuff
+		String[] sameAsTrack =  {"Administrator", "Anwender", "BSD", "Entwickler", "Sonstiges"};
 		for (String s: sameAsTrack) {
 			if (0==name.compareTo(s)) return name;
-	    }
-		// Rest are Devrooms
-		return "Developer Room";
+		}
+		// assign misc stuff to event location
+		return "FH Joanneum";
 	}
 }
