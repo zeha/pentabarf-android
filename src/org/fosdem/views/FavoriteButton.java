@@ -4,7 +4,7 @@ import org.fosdem.db.DBAdapter;
 import org.fosdem.pojo.Event;
 import org.fosdem.util.UIUtil;
 
-import android.R;
+import at.linuxwochen.wien13.R;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -39,7 +39,7 @@ public class FavoriteButton extends ImageView implements OnClickListener {
 	
 	public FavoriteButton(Context context,AttributeSet attributeSet){
 		super(context,attributeSet);
-		this.setImageResource(R.drawable.btn_star_big_off);
+		this.setImageResource(android.R.drawable.btn_star_big_off);
 		this.setOnClickListener(this);
 	}
 
@@ -59,9 +59,9 @@ public class FavoriteButton extends ImageView implements OnClickListener {
 
 	protected void setImageResource() {
 		if (isFavorite) {
-			this.setImageResource(R.drawable.btn_star_big_on);
+			this.setImageResource(android.R.drawable.btn_star_big_on);
 		} else
-			this.setImageResource(R.drawable.btn_star_big_off);
+			this.setImageResource(android.R.drawable.btn_star_big_off);
 	}
 
 	public void onClick(View v) {
@@ -72,12 +72,12 @@ public class FavoriteButton extends ImageView implements OnClickListener {
 			// Unmark
 			db.deleteBookmark(event.getId());
 			UIUtil.showToast(this.getContext(), this.getContext().getString(
-					at.linuxtage.glt12.R.string.favorites_event_removed));
+					R.string.favorites_event_removed));
 		} else {
 			// Mark
 			db.addBookmark(event);
 			UIUtil.showToast(this.getContext(), this.getContext().getString(
-					at.linuxtage.glt12.R.string.favorites_event_added));
+					R.string.favorites_event_added));
 		}
 		db.close();
 		isFavorite = !isFavorite;

@@ -3,7 +3,7 @@ package org.fosdem.broadcast;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import at.linuxtage.glt12.R;
+import at.linuxwochen.wien13.R;
 
 import org.fosdem.db.DBAdapter;
 import org.fosdem.pojo.Event;

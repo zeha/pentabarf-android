@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	  package="at.linuxtage.glt12"
-	  android:versionName="1.0" android:versionCode="1">
+	  package="at.linuxwochen.wien13"
+	  android:versionName="1.0"
+	  android:versionCode="1" >
 	  <uses-permission android:name="android.permission.INTERNET" />
 	  <uses-permission android:name="android.permission.VIBRATE" />
 	  <uses-sdk android:targetSdkVersion="4" android:minSdkVersion="3"/>
@@ -60,11 +61,11 @@
 		<provider android:name="org.fosdem.db.DBAdapter" android:authorities="gltdb"/>
 		<!-- Provides search suggestions for words and their definitions. -->
 		<provider android:name="org.fosdem.providers.SearchProvider"
-			android:authorities="gltsearch"
+			android:authorities="wien13search"
 			android:syncable="false" />
 	<activity android:name="org.fosdem.schedules.SortPreferences"></activity>
 </application>
 	<instrumentation 
 		android:name="android.test.InstrumentationTestRunner"
-		android:label="FOSDEM JUnit" android:targetPackage="at.linuxtage.glt12"/>
+		android:label="FOSDEM JUnit" android:targetPackage="at.linuxwochen.wien13"/>
 </manifest> 

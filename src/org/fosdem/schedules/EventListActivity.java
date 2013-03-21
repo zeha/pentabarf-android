@@ -3,7 +3,7 @@ package org.fosdem.schedules;
 import java.util.ArrayList;
 import java.util.Date;
 
-import at.linuxtage.glt12.R;
+import at.linuxwochen.wien13.R;
 
 import org.fosdem.broadcast.FavoritesBroadcast;
 import org.fosdem.db.DBAdapter;

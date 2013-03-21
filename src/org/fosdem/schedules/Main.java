@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-import at.linuxtage.glt12.R;
+import at.linuxwochen.wien13.R;
 
 import org.fosdem.broadcast.FavoritesBroadcast;
 import org.fosdem.db.DBAdapter;
@@ -59,7 +59,7 @@ public class Main extends Activity implements ParserEventListener,
 	private static final int UPDATE_ID = Menu.FIRST + 1;
 	private static final int SETTINGS_ID = Menu.FIRST + 2;
 
-	public static final String XML_URL = "http://glt12-programm.linuxtage.at/schedule.en.xml";
+	public static final String XML_URL = "http://www.shacknet.at/max/schedule.en.new.xml";
 
 	public int counter = 0;
 	protected TextView tvProgress = null, tvDbVer = null;

@@ -5,7 +5,7 @@ package org.fosdem.schedules;
 
 import java.util.ArrayList;
 
-import at.linuxtage.glt12.R;
+import at.linuxwochen.wien13.R;
 
 import org.fosdem.db.DBAdapter;
 import org.fosdem.pojo.Room;

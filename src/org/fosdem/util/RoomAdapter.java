@@ -5,7 +5,7 @@ package org.fosdem.util;
 
 import java.util.ArrayList;
 
-import at.linuxtage.glt12.R;
+import at.linuxwochen.wien13.R;
 
 import org.fosdem.pojo.Room;
 

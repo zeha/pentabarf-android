@@ -4,7 +4,7 @@
 <CheckBoxPreference
 android:title="Enable notifications"
 android:defaultValue="true"
-android:summary="If checked, this will notify you of upcoming events you favorited"
+android:summary="If checked, this will notify you of upcoming favorite events"
 android:key="notifyPref" />
 <CheckBoxPreference
 android:title="Vibrate"
@@ -14,12 +14,12 @@ android:key="vibratePref" />
 <CheckBoxPreference
 android:title="Flash led"
 android:defaultValue="true"
-android:summary="Blink led on notification"
+android:summary="Blink led on notifications"
 android:key="ledPref" />
 <EditTextPreference
-android:title="Notification time"
+android:title="Reminder"
 android:defaultValue="10"
-android:summary="Delay before getting notified of an upcoming favorite event"
+android:summary="Time in minutes before getting notified of an upcoming favorite event"
 android:key="delayPref"
 android:inputType="number"
 android:digits="0123456789"
@@ -30,15 +30,15 @@ android:maxLength="3"
 <CheckBoxPreference
 android:title="Only show upcoming"
 android:defaultValue="false"
-android:summary="If checked, this will ony show the upcoming favorites in the list"
+android:summary="If checked, this will only show the upcoming favorites in the list"
 android:key="upcomingPref"
  />
 </PreferenceCategory>
 <PreferenceCategory android:title="Sorting">
 <ListPreference
 android:key="sortbyPref"
-android:title="Sort Events by"
-android:summary="Choose the criteria after the events should be aggregated"
+android:title="Sort events by"
+android:summary="Choose the method by which the events are to be aggregated"
 android:entries="@array/sort_by_desc"
 android:entryValues="@array/sort_by_desc" />
 </PreferenceCategory>
