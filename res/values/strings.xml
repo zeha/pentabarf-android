@@ -34,4 +34,9 @@
 	<string name="searchprovider">wien13search</string>
 	<string name="search_and_update_hints">To search press the Android <i>Search</i> key.\nMake sure to be up2date using the <i>Update</i> option in the menu.</string>
 	<string name="event_specials">Visit linuxtage.at or\nsend feedback to graz12@linuxtage.at</string>
+	<string name="hashtag">#lww2013</string>
+	<string name="share_attending">I\'m attending</string>
+	<string name="share_currently_attending">I\'m currently attending </string>
+	<string name="share_day">day</string>
+	<string name="share_at">at</string>
 </resources>

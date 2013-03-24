@@ -234,16 +234,16 @@ public class DisplayEvent extends Activity implements OnGestureListener {
 	public void share() {
 		final Intent intent = new Intent(android.content.Intent.ACTION_SEND);
 		intent.setType("text/plain");
-		String extra = "I'm attending '" + event.getTitle() + "' (Day "
-				+ (event.getDayindex()) + " at " + event.getStart().getHours()
-				+ ":" + event.getStart().getMinutes() + " @ " + event.getRoom()
-				+ ") #glt12";
+		String extra = getString(R.string.share_attending) + " '" + event.getTitle() + "' (" + getString(R.string.share_day) 
+				+ (event.getDayindex()) + " " + getString(R.string.share_at) + " " + 
+				StringUtil.datesToSimpleString(event.getStart()) + " @ " + event.getRoom()
+				+ ") " + getString(R.string.hashtag);
 		long currentTime = Calendar.getInstance().getTimeInMillis();
 		if (currentTime >= event.getStart().getTime()
 				&& currentTime <= (event.getStart().getTime() + ((event
 						.getDuration() + 10) * 60 * 1000)))
-			extra = "I'm currently attending '" + event.getTitle() + "' ("
-					+ event.getRoom() + ") #glt12";
+			extra = getString(R.string.share_currently_attending) +" '" + event.getTitle() + "' ("
+					+ event.getRoom() + ") #";
 		intent.putExtra(Intent.EXTRA_TEXT, extra);
 		startActivity(Intent.createChooser(intent, getString(R.string.share)));
 	}

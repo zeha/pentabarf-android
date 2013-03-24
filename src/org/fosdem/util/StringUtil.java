@@ -4,9 +4,9 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 import org.fosdem.pojo.Person;
-import org.fosdem.schedules.Main;
 
 
 /**
@@ -100,9 +100,13 @@ public class StringUtil {
 	
 	
 	public static String datesToString(final Date start, final int duration) {
-		return new SimpleDateFormat("EEE @HH:mm").format(start)
+		return new SimpleDateFormat("EEE @HH:mm", Locale.GERMAN).format(start)
 			+ " - " + duration + " min";
 		
+	}
+	
+	public static String datesToSimpleString(final Date start) {
+		return new SimpleDateFormat("HH:mm", Locale.GERMAN).format(start);
 	}
 	
 	public static String dateTimeToString(final Date date) {
