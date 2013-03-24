@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import at.linuxwochen.wien13.R;
 
 import org.fosdem.pojo.Event;
-import org.fosdem.schedules.EventListActivity;
 
 import android.content.Context;
 import android.view.LayoutInflater;

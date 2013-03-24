@@ -40,10 +40,8 @@ public class TrackListActivity extends ListActivity  {
 	private static final int ALL_EVENTS = Menu.FIRST;
 	private static final int SETTINGS = Menu.FIRST + 1;
 	
-	private ArrayList<Track> tracks = null;
 	private int dayIndex = 0;
 
-	private ArrayList<Room> rooms;
 	private enum SortBy {
 		Track, Room
 	};
@@ -91,12 +89,10 @@ public class TrackListActivity extends ListActivity  {
 	}
 	protected void handleRoom() {
 		setTitle("Rooms for Day " + dayIndex);
-		rooms = getRooms();
 		setListAdapter(new RoomAdapter(this, R.layout.track_list, getRooms()));
 	}
 
 	protected void handleTrack()	{
-		tracks = getTracks();
 		setTitle("Tracks for Day " + dayIndex);
 		setListAdapter(new TrackAdapter(this, R.layout.track_list, getTracks()));
 	}

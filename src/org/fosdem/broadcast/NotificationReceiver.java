@@ -2,13 +2,11 @@ package org.fosdem.broadcast;
 
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 import at.linuxwochen.wien13.R;
 
 import org.fosdem.db.DBAdapter;
 import org.fosdem.pojo.Event;
 import org.fosdem.schedules.DisplayEvent;
-import org.fosdem.schedules.Main;
 import org.fosdem.schedules.Preferences;
 import org.fosdem.util.StringUtil;
 

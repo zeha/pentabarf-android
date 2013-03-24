@@ -1,6 +1,7 @@
 package org.fosdem.util;
 
 import java.io.File;
+
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -16,7 +17,7 @@ import android.util.Log;
 
 public class FileUtil {
 	public static final String LOG_TAG=FileUtil.class.getName();
-    public static final String CACHELOCATION = "/data/data/org.fosdem/files/";  // TODO eMich - get cachelocation from Android environment
+    public static final String CACHELOCATION =  "/data/data/org.fosdem/files/";
 
 	public static Object fetch(String address) throws MalformedURLException,
 			IOException {
@@ -50,6 +51,7 @@ public class FileUtil {
 				fos.write((char) nextChar);
 
 			fos.flush();
+			fos.close();
 		}
 
 		FileInputStream fis = new FileInputStream(CACHELOCATION + cacheName);
@@ -74,6 +76,7 @@ public class FileUtil {
 				fos.write((char) nextChar);
 
 			fos.flush();
+			fos.close();
 		}
 
 		FileInputStream fis = new FileInputStream(CACHELOCATION + cacheName);

@@ -3,6 +3,7 @@ package org.fosdem.schedules;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 import at.linuxwochen.wien13.R;
 
@@ -24,7 +25,6 @@ import android.content.DialogInterface.OnMultiChoiceClickListener;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -138,7 +138,7 @@ public class Main extends Activity implements ParserEventListener,
 			buttonsView.setOrientation(LinearLayout.VERTICAL);
 
 			int counter = 0;
-			SimpleDateFormat formatter = new SimpleDateFormat("E, d MMM");
+			SimpleDateFormat formatter = new SimpleDateFormat("E, d MMM", Locale.GERMAN);
 			LinearLayout ll = new LinearLayout(this);
 			ll.setOrientation(LinearLayout.HORIZONTAL);
 			for (Date d : ldays) {
