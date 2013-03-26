@@ -59,7 +59,7 @@ public class Main extends Activity implements ParserEventListener,
 	private static final int UPDATE_ID = Menu.FIRST + 1;
 	private static final int SETTINGS_ID = Menu.FIRST + 2;
 
-	public static final String XML_URL = "http://www.shacknet.at/max/schedule.en.new.xml";
+	public final String XML_URL = getString(R.string.xml_url);
 
 	public int counter = 0;
 	protected TextView tvProgress = null, tvDbVer = null;
