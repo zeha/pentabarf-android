@@ -143,7 +143,7 @@ public class EventListActivity extends ListActivity {
 				String[] queryArgs = new String[] { query };
 				return (ArrayList<Event>) db.getEventsFilteredLike(null, null,
 						queryArgs, queryArgs, queryArgs, queryArgs, queryArgs,
-						null, queryArgs);
+						null, queryArgs, queryArgs, queryArgs);
 			} else if (favorites != null && favorites) {
 				Log.e(LOG_TAG, "Getting favorites...");
 

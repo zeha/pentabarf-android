@@ -110,7 +110,7 @@ public class SearchProvider extends ContentProvider {
 		MatrixCursor cursor = null;
 		try {
 			List<Event> events = db.getEventsFilteredLike(null, null, queryVal,
-					queryVal, queryVal, queryVal, queryVal, null, queryVal);
+					queryVal, queryVal, queryVal, queryVal, null, queryVal,queryVal,queryVal);
 			cursor = new MatrixCursor(COLUMNS);
 			for (Event event : events) {
 				cursor.addRow(columnValuesOfEvent(event));

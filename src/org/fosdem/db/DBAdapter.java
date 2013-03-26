@@ -577,7 +577,7 @@ public class DBAdapter extends ContentProvider {
 
 	public List<Event> getEventsFilteredLike(Date beginDate, Date endDate,
 			String[] titles, String[] tracks, String[] types, String[] tags,
-			String[] rooms, String[] languages, String[] persons) {
+			String[] rooms, String[] languages, String[] persons, String[] abstracts, String[] descriptions) {
 		StringBuilder sb = new StringBuilder();
 		if (titles != null)
 			for (String title : titles) {
@@ -606,6 +606,14 @@ public class DBAdapter extends ContentProvider {
 		if (persons != null)
 			for (String person : persons) {
 				sb.append(" or personsearch like '%" + person + "%'");
+			}
+		if (abstracts != null)
+			for (String abstr : abstracts) {
+				sb.append(" or abstract like '%" + abstr + "%'");
+			}
+		if (descriptions != null)
+			for (String desc : descriptions) {
+				sb.append(" or description like '%" + desc + "%'");
 			}
 		if (beginDate != null && endDate != null) {
 			sb.append("and (start>=" + beginDate.getTime() + " and end<="
