@@ -157,7 +157,7 @@ public class Main extends Activity implements ParserEventListener,
 				b.setLayoutParams(lp);
 				ll.addView(b);
 				
-				if (counter % 2 == 0) {
+				if (counter % 3 == 0) {
 					buttonsView.addView(ll, lp);
 					ll = new LinearLayout(this);
 					ll.setOrientation(LinearLayout.HORIZONTAL);
