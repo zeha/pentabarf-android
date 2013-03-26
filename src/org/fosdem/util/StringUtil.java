@@ -100,13 +100,13 @@ public class StringUtil {
 	
 	
 	public static String datesToString(final Date start, final int duration) {
-		return new SimpleDateFormat("EEE @HH:mm", Locale.GERMAN).format(start)
+		return new SimpleDateFormat("EEE @HH:mm", Locale.getDefault()).format(start)
 			+ " - " + duration + " min";
 		
 	}
 	
 	public static String datesToSimpleString(final Date start) {
-		return new SimpleDateFormat("HH:mm", Locale.GERMAN).format(start);
+		return new SimpleDateFormat("HH:mm", Locale.getDefault()).format(start);
 	}
 	
 	public static String dateTimeToString(final Date date) {
