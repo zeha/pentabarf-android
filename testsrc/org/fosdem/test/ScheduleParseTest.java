@@ -38,7 +38,7 @@ public class ScheduleParseTest extends AndroidTestCase {
 		}
 		assertTrue(s != null);
 		assertTrue(s.getDays() != null);
-		assertTrue(s.getDays().size() == 2);
+		assertTrue(s.getDays().size() == 3);
 		assertTrue(s.getConference().getCity().equals("Brussels"));
 		assertTrue(((Day) (s.getDays().toArray()[0])).getRooms().size() > 0);
 		Collection<Room> rooms = ((Day) (s.getDays().toArray()[0])).getRooms();

@@ -89,7 +89,7 @@ public class EventListActivity extends ListActivity {
 		if (events.size() <= 0) {
 			this.finish();
 			final Context context = getApplicationContext();
-			final Toast toast = Toast.makeText(context, "Could not find events", Toast.LENGTH_LONG);
+			final Toast toast = Toast.makeText(context, getString(R.string.no_events), Toast.LENGTH_LONG);
 			toast.show();
 		}
 		for (Event e : events) {
