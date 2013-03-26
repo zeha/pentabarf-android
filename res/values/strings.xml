@@ -39,4 +39,5 @@
 	<string name="share_currently_attending">I\'m currently attending </string>
 	<string name="share_day">day</string>
 	<string name="share_at">at</string>
+	<string name="no_events">No more events for today</string>
 </resources>
