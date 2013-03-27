@@ -1,5 +1,7 @@
 package org.fosdem.schedules;
 
+import at.linuxwochen.wien13.R;
+
 import java.io.IOException;
 
 import org.fosdem.db.DBAdapter;
@@ -68,7 +70,7 @@ public class BackgroundUpdater implements Runnable {
 		sendMessage(Main.STARTFETCHING);
 
 		// Parse
-		final ScheduleParser parser = new ScheduleParser(Main.XML_URL, context);
+		final ScheduleParser parser = new ScheduleParser(this.context.getString(R.string.xml_url), context);
 		parser.addTagEventListener(parseEventListener);
 		final Schedule s = parser.parse();
 

@@ -59,8 +59,6 @@ public class Main extends Activity implements ParserEventListener,
 	private static final int UPDATE_ID = Menu.FIRST + 1;
 	private static final int SETTINGS_ID = Menu.FIRST + 2;
 
-	public final String XML_URL = getString(R.string.xml_url);
-
 	public int counter = 0;
 	protected TextView tvProgress = null, tvDbVer = null;
 	protected Button btnSearch, btnFavorites, btnCurrentEvents;
