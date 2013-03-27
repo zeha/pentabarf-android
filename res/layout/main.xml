@@ -3,6 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
 
+<!--
     <TextView
 	    android:text="Database version"
 	    android:id="@+id/db_ver"
@@ -11,6 +12,7 @@
 	    android:layout_above="@+id/progress"/>
 
 
+-->
 	    <TextView android:id="@+id/progress"
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
@@ -71,11 +73,18 @@
 	               android:text="DigitalClock"
 	               android:textSize="20dip" />
 
+	           <TextView android:id="@+id/db_ver"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/digitalClock1"
+				android:layout_marginBottom="0dip"
+				android:layout_marginTop="0dip" />
+	           
 	           <Button
 	                android:id="@+id/btn_event_specials"
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
-	                android:layout_below="@id/digitalClock1"
+	                android:layout_below="@id/db_ver"
 	                android:autoLink="all"
 	                android:text="@string/event_specials"
 	                android:textSize="14dip" />
