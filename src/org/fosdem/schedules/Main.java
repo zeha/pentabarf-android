@@ -313,7 +313,11 @@ public class Main extends Activity implements ParserEventListener,
 	public boolean onMenuItemSelected(int featureId, MenuItem item) {
 		switch (item.getItemId()) {
 		case UPDATE_ID:
-			showDialog(DIALOG_UPDATE);
+			//showDialog(DIALOG_UPDATE);
+			final Thread t = new Thread(new BackgroundUpdater(
+					handler, Main.this, getApplicationContext(),
+					true, false));
+			t.start();
 			return true;
 		case ABOUT_ID:
 			showDialog(DIALOG_ABOUT);
