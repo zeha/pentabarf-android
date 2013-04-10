@@ -16,7 +16,7 @@
 	<string name="synchronize_description">Synchronizes the schedule with the one from linuxtage.at online.\n\nYou need a connection to the Internet for this to work.</string>
 	<string name="db_ver">Database last updated:</string>
 	<string name="about_text1">Schedule application</string>
-	<string name="about_text2">Adapted for\nLinuxwochen Wien 2013:\nMarkus \'mäx\' Macher\n\nGLT12 features:\nMichael \'mika\' Prokop\n\nExtended by:\nUlrich \'mru\' Dangel\n\nOriginally developed by:\nMichaël Uyttersprot, Pieter Iserbyt and Christophe Vandeplas.</string>
+	<string name="about_text2">Adapted for\nLinuxwochen Wien 2013:\n\'mäx\' markus.macher@gmail.com\n\nGLT12 features:\nMichael \'mika\' Prokop\n\nExtended by:\nUlrich \'mru\' Dangel\n\nOriginally developed by:\nMichaël Uyttersprot, Pieter Iserbyt and Christophe Vandeplas.</string>
 	<string name="about_text3">Source available at http://github.com/mika/pentabarf-android\nIcons (CC BY 3.0) from http://linuxtage.at/pressematerial/</string>
 	<string name="favorites">Favorites</string>
 	<string name="favorites_event_removed">Event removed from favorites</string>
