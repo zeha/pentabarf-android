@@ -24,4 +24,6 @@
 	<drawable name="glt_dark_orange">#d58125</drawable>
 	<drawable name="glt_light_orange">#FFE175</drawable>
 	<drawable name="glt_green">#006c34</drawable>
+	<drawable name="lww_blue">#0066B3</drawable>
+	<drawable name="lww_orange">#FF9933</drawable>
 </resources>

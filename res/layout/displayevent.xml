@@ -4,7 +4,7 @@
 	android:id="@+id/eventscrollview"  
 	android:layout_width="fill_parent" 
 	android:layout_height="fill_parent"
-	android:background="@drawable/glt_light_orange">
+	android:background="@drawable/solid_white">
 	<LinearLayout
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"
@@ -14,7 +14,7 @@
 		android:layout_width="fill_parent" 
 		android:layout_height="wrap_content" 
 		android:orientation="vertical" 
-		android:background="@drawable/glt_dark_orange"
+		android:background="@drawable/lww_orange"
 		>
 		<org.fosdem.views.FavoriteButton
 			android:id="@+id/favoriteButton"
@@ -38,7 +38,7 @@
 		android:layout_width="fill_parent" 
 		android:layout_height="wrap_content" 
 		android:orientation="vertical" 
-		android:background="@drawable/glt_green"
+		android:background="@drawable/lww_blue"
 		>
 		<TextView 
 			android:text="event_track" 
@@ -93,7 +93,7 @@
 			android:layout_width="fill_parent" 
 			android:layout_height="wrap_content" 
 			android:orientation="vertical" 
-			android:background="@drawable/glt_light_orange"
+			android:background="@drawable/solid_white"
 			>
 		<TextView 
 			android:text="event_abstract" 
@@ -103,7 +103,7 @@
 			android:textColor="#333" 
 			android:padding="4dip"
 			android:layout_margin="10dip"
-			android:background="@drawable/glt_dark_orange"
+			android:background="@drawable/lww_orange"
 			/>
 			
 		<TextView 
