@@ -40,5 +40,5 @@
 	<string name="share_day">day</string>
 	<string name="share_at">at</string>
 	<string name="no_events">No more events for today</string>
-    <string name="xml_url">http://www.shacknet.at/max/schedule.en.new.xml</string>
+    <string name="xml_url">https://cfp.linuxwochen.at/en/lww2013/public/schedule.xml</string>
 </resources>
