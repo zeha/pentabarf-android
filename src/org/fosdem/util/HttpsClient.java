@@ -37,7 +37,7 @@ public class HttpsClient extends DefaultHttpClient {
 			KeyStore trusted = KeyStore.getInstance("BKS");
 			InputStream in = context.getResources().openRawResource(R.raw.keys);
 			try {
-				trusted.load(in, "soh6Quaiqu".toCharArray());
+				trusted.load(in, "dywecOydyic4".toCharArray());
 			} finally {
 				in.close();
 			}

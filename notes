@@ -1,0 +1,17 @@
+HTTPS
+===
+
+The keystore in res/raw/keys.bks can contain CA and intermediate certificates if
+required.
+To regenerate or update the following steps are required:
+
+keytool -importcert -v -trustcacerts -file intermediat.crt -alias IntermediateCA
+-keystore res/raw/keys.bks  -provider
+org.bouncycastle.jce.provider.BouncyCastleProvider -providerpath
+bcprov-jdk16-145.jar -storetype BKS -storepass secret 
+
+A full and more in depth description can be found here:
+http://blog.antoine.li/2010/10/22/android-trusting-ssl-certificates/
+
+The bouncycastle provider that works with android can be found here:
+http://bouncycastle.org/download/bcprov-jdk16-145.jar
