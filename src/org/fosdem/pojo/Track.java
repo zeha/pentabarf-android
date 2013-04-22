@@ -53,12 +53,6 @@ public class Track {
 	}
 	
 	public String getType() {
-		// GLT12 specific stuff
-		String[] sameAsTrack =  {"Administrator", "Anwender", "BSD", "Entwickler", "Sonstiges"};
-		for (String s: sameAsTrack) {
-			if (0==name.compareTo(s)) return name;
-		}
-		// assign misc stuff to event location
-		return "FH Joanneum";
+		return "Track";
 	}
 }
