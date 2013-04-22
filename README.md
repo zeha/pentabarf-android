@@ -3,7 +3,6 @@ pentabarf-android
 
 This repository contains the [Android](http://www.android.com/) application for
 making the schedule of [Linuxwochen Wien 2013] (http://www.linuxwochen.at) available offline.
-[Linuxdays Graz](http://linuxtage.at/) available offline.
 
 It's based on [mika's pentabarf-android fork](https://github.com/mika/pentabarf-android) which is based on [mrud's pentabarf-android
 fork](https://github.com/mrud/pentabarf-android) which itself is based on the
