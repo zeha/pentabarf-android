@@ -28,6 +28,8 @@ import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -114,6 +116,10 @@ public class Main extends Activity implements ParserEventListener,
 		
 		btnCurrentEvents = (Button) findViewById(R.id.current_event);
 		btnCurrentEvents.setOnClickListener(this);
+		
+		Button specialText = (Button) findViewById(R.id.btn_event_specials);
+		specialText.setMovementMethod(LinkMovementMethod.getInstance());
+		specialText.setText(Html.fromHtml(getString(R.string.event_specials)));
 
 		tvProgress = (TextView) findViewById(R.id.progress);
 		tvDbVer = (TextView) findViewById(R.id.db_ver);

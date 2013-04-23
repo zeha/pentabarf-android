@@ -67,8 +67,8 @@
 	               android:layout_width="fill_parent"
 	               android:layout_height="wrap_content"
 	               android:layout_below="@id/btn_favorites"
-	               android:layout_marginBottom="20dip"
-	               android:layout_marginTop="20dip"
+	               android:layout_marginBottom="8dip"
+	               android:layout_marginTop="8dip"
 	               android:gravity="center"
 	               android:text="DigitalClock"
 	               android:textSize="20dip" />
@@ -85,9 +85,7 @@
 	                android:layout_width="fill_parent"
 	                android:layout_height="wrap_content"
 	                android:layout_below="@id/db_ver"
-	                android:autoLink="all"
-	                android:text="@string/event_specials"
-	                android:textSize="14dip" />
+	                android:textSize="20dip" />
 
 	            <Button
 	                android:id="@+id/btn_search"

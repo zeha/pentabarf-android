@@ -33,7 +33,7 @@
 	<string name="current_event">Upcoming events</string>
 	<string name="searchprovider">wien13search</string>
 	<string name="search_and_update_hints">To search press the Android <i>Search</i> key.\nMake sure to be up2date using the <i>Update</i> option in the menu.</string>
-	<string name="event_specials">Raumplan: http://www.linuxwochen.at/images/stories/LWW/wien/penguin-variant.png\nVisit wien.linuxwochen.at or\nsend feedback to programm2013@linuxwochen.at</string>
+	<string name="event_specials"><data><![CDATA[ <center><a href="http://www.linuxwochen.at/">Raumplan</a><br/><a href="http://wien.linuxwochen.at/">Homepage</a><br/><a href="mailto:programm2013@linuxwochen.at">Kontakt und Feedback</a></center> ]]> </data></string>
 	<string name="hashtag">#lww2013</string>
 	<string name="share_attending">I\'m attending</string>
 	<string name="share_currently_attending">I\'m currently attending </string>
