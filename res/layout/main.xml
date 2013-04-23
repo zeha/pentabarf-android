@@ -37,7 +37,7 @@
 	                android:layout_height="wrap_content"
 	                android:layout_centerHorizontal="true"
 	                android:contentDescription="Logo"
-	                android:src="@drawable/glt_bg" />
+	                android:src="@drawable/lww_logo" />
 
 	            <LinearLayout
 	                android:id="@+id/day_select"
