@@ -113,13 +113,16 @@ public class Main extends Activity implements ParserEventListener,
 		
 		btnFavorites = (Button) findViewById(R.id.btn_favorites);
 		btnFavorites.setOnClickListener(this);
-		
+
 		btnCurrentEvents = (Button) findViewById(R.id.current_event);
 		btnCurrentEvents.setOnClickListener(this);
 		
 		Button specialText = (Button) findViewById(R.id.btn_event_specials);
 		specialText.setMovementMethod(LinkMovementMethod.getInstance());
 		specialText.setText(Html.fromHtml(getString(R.string.event_specials)));
+
+		btnSearch = (Button) findViewById(R.id.btn_search);
+		btnSearch.setOnClickListener(this);
 
 		tvProgress = (TextView) findViewById(R.id.progress);
 		tvDbVer = (TextView) findViewById(R.id.db_ver);
@@ -293,8 +296,9 @@ public class Main extends Activity implements ParserEventListener,
 		switch (id) {
 		case R.id.day_select:
 			showTracksForDay((Integer) v.getTag());
+			break;
 		case R.id.btn_search:
-			// nothing to do as btn is not active
+			onSearchRequested();
 			break;
 		case R.id.btn_favorites:
 			showFavorites();
