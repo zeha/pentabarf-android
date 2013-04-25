@@ -34,7 +34,7 @@
 	<string name="searchprovider">wien13search</string>
 	<string name="search_and_update_hints">To search press <i>here</i> or the Android <i>Search</i> key.\nMake sure to be up2date using the <i>Update</i> option in the menu.</string>
 	<string name="event_specials"><data><![CDATA[ <center><a href="http://cfp.linuxwochen.at/LWW2013_FH_Technikum.png">Room plan</a><br><a href="http://wien.linuxwochen.at/">Homepage</a><br/><a href="mailto:programm2013@linuxwochen.at">Contact and feedback</a></center> ]]> </data></string>
-	<string name="hashtag">#lww2013</string>
+	<string name="hashtag">#lww13</string>
 	<string name="share_attending">I\'m attending</string>
 	<string name="share_currently_attending">I\'m currently attending </string>
 	<string name="share_day">day</string>
