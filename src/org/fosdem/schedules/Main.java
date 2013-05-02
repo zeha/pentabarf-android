@@ -196,7 +196,7 @@ public class Main extends Activity implements ParserEventListener,
 		}
 
 		if (count < 1) {
-			showDialog(DIALOG_UPDATE);
+			launchBackgroundUpdater();
 		}
 	}
 
@@ -279,6 +279,13 @@ public class Main extends Activity implements ParserEventListener,
 		return builder.create();
 	}
 
+	protected void launchBackgroundUpdater() {
+		final Thread t = new Thread(new BackgroundUpdater(
+				handler, Main.this, getApplicationContext(),
+				true, false));
+		t.start();
+	}
+
 	@Override
 	protected Dialog onCreateDialog(int id) {
 		switch (id) {
@@ -323,11 +330,7 @@ public class Main extends Activity implements ParserEventListener,
 	public boolean onMenuItemSelected(int featureId, MenuItem item) {
 		switch (item.getItemId()) {
 		case UPDATE_ID:
-			//showDialog(DIALOG_UPDATE);
-			final Thread t = new Thread(new BackgroundUpdater(
-					handler, Main.this, getApplicationContext(),
-					true, false));
-			t.start();
+			launchBackgroundUpdater();
 			return true;
 		case ABOUT_ID:
 			showDialog(DIALOG_ABOUT);
