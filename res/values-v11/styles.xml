@@ -1,0 +1,5 @@
+<resources>
+    <!-- 3.0+ -->
+	<style name="AppBaseTheme" parent="android:Theme.Holo">
+	</style>
+</resources>
