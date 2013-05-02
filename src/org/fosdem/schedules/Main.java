@@ -197,6 +197,14 @@ public class Main extends Activity implements ParserEventListener,
 
 		if (count < 1) {
 			launchBackgroundUpdater();
+		} else {
+			Date now = new java.util.Date();
+			long nowMillis = now.getTime();
+			nowMillis -= 1000*3600; // 1 hour
+			Date updateThreshold = new Date(nowMillis);
+			if (getDBLastUpdated().before(updateThreshold)) {
+				launchBackgroundUpdater();
+			}
 		}
 	}
 
