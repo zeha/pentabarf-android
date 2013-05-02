@@ -363,33 +363,26 @@ public class Main extends Activity implements ParserEventListener,
 			switch (msg.what) {
 			case TAGEVENT:
 				Main.this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR);
-				tvProgress.setText("Fetched " + counter + " events.");
 				break;
 			case STARTFETCHING:
-				tvProgress.setText("Downloading...");
+				toast(getResources().getString(R.string.evt_startfetching));
 				break;
 			case DBAdapter.MSG_EVENT_STORED:
-				tvProgress.setText("Stored " + msg.arg1 + " events.");
 				break;
 			case DONEFETCHING:
-				tvProgress.setText("Done fetching, loading into DB");
 				setDBLastUpdated();
 				break;
 			case DONELOADINGDB:
-				final String doneDb = "Done loading into DB";
-				tvProgress.setText(doneDb);
+				final String doneDb = getResources().getString(R.string.evt_doneloadingdb);
 				toast(doneDb);
 				tvDbVer.setText(getString(R.string.db_ver) + " "
 						+ StringUtil.dateTimeToString(getDBLastUpdated()));
 				createButtons();
 				break;
 			case ROOMIMGSTART:
-				tvProgress.setText("Downloading room images...");
 				break;
 			case ROOMIMGDONE:
-				final String doneRooms = "Room Images downloaded";
-				tvProgress.setText(doneRooms);
-				toast(doneRooms);
+				toast(getResources().getString(R.string.evt_roomimgdone));
 				break;
 			/*case LOAD_BG_START:
 				Display display = ((WindowManager) getSystemService(WINDOW_SERVICE)).getDefaultDisplay(); 
