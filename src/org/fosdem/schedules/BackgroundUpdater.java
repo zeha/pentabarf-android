@@ -13,6 +13,7 @@ import org.fosdem.pojo.Schedule;
 import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
+import android.util.Log;
 
 /**
  * @author sandbender
@@ -116,7 +117,9 @@ public class BackgroundUpdater implements Runnable {
 					updateRooms();
 				sendMessage(Main.LOAD_BG_END); 
 			} catch (IOException e) {
+				Log.e(Main.LOG_TAG, e.toString());
 			} catch (ParserException e) {
+				Log.e(Main.LOG_TAG, e.toString());
 			}
 		}
 	}
